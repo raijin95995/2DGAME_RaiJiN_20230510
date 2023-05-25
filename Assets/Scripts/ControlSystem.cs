@@ -1,10 +1,11 @@
 using UnityEngine;
+[RequireComponent(typeof(Rigidbody2D))]
 
 public class ControlSystem : MonoBehaviour
 {
-    int A = 5;
-    int B = 6;
-    [Header("移動速度"),Range(0,10)]
+    //int A = 5;
+    //int B = 6;
+    [Header("移動速度"),Range(0,30)]
     public float moveSpeed = 3.0f;
     [Header("角色剛體")]
     public Rigidbody2D rig;
@@ -18,6 +19,8 @@ public class ControlSystem : MonoBehaviour
         //print(A + B);
         //print("A+B=" + (A + B));
         //print("A+B=" + A + B);
+        rig = this.gameObject.GetComponent<Rigidbody2D>();
+
     }
 
     private void Start()
@@ -33,7 +36,10 @@ public class ControlSystem : MonoBehaviour
 
 	private void Move()
 	{
-        print("I'm walking");
+        float h = Input.GetAxis("Horizontal");
+        float v = Input.GetAxis("Vertical");
+        //print("I'm walking");
+        rig.velocity = new Vector2(h,v) * moveSpeed ;
 	}
 
 }
