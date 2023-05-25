@@ -9,6 +9,12 @@ public class ControlSystem : MonoBehaviour
     public float moveSpeed = 3.0f;
     [Header("角色剛體")]
     public Rigidbody2D rig;
+    [Header("動畫控制器")]
+    public Animator ani;
+    [Header("跑步開關")]
+    public string perRun = "開關走路";
+
+
 
 
     private void Awake()
@@ -40,6 +46,9 @@ public class ControlSystem : MonoBehaviour
         float v = Input.GetAxis("Vertical");
         //print("I'm walking");
         rig.velocity = new Vector2(h,v) * moveSpeed ;
+
+        ani.SetBool(perRun, h != 0 || v!=0);
+
 	}
 
 }
