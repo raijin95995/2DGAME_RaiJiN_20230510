@@ -14,6 +14,8 @@ public class ControlSystem : MonoBehaviour
     [Header("跑步開關")]
     public string perRun = "開關走路";
 
+    public Transform tri;
+
 
 
 
@@ -49,8 +51,21 @@ public class ControlSystem : MonoBehaviour
 
         ani.SetBool(perRun, h != 0 || v!=0);
 
-        print(Input.GetKeyDown(KeyCode.D));
+		//print(Input.GetKeyDown(KeyCode.D));
 
-	}
+
+		if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+		{
+            print("左轉");
+            this.transform.localScale = new Vector3(1, 1, 3.16f);
+		}
+
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            print("右轉");
+            this.transform.localScale = new Vector3(-1, 1, 3.16f);
+        }
+
+    }
 
 }
