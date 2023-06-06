@@ -49,6 +49,8 @@ public class ControlSystem : MonoBehaviour
 
         ani.SetBool(perRun, h != 0 || v!=0);
 
+        print(Input.GetKeyDown(KeyCode.D));
+
 	}
 
 }
