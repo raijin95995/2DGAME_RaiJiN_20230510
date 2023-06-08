@@ -6,6 +6,8 @@ public class SpawnWeaponSystem : MonoBehaviour
 	public GameObject prefabWeapon;
 	[Header("¥Í¦¨¶¡¹j"),Range(0,10)]
 	public float interval = 4.5f;
+	public Vector2 power ;
+	
 
 
 
@@ -19,8 +21,11 @@ public class SpawnWeaponSystem : MonoBehaviour
     private void SpawnWeapon()
 	{
 
-		Instantiate(prefabWeapon, transform.position, transform.rotation);
-	
+		GameObject tempWeapon = Instantiate(prefabWeapon, transform.position, transform.rotation);
+		Rigidbody2D rigWeapon = tempWeapon.GetComponent<Rigidbody2D>();
+		rigWeapon.AddForce(power);
+		
+
 	}
 
 

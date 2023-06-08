@@ -35683,7 +35683,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688031632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2917554, y: -0.83, z: -10}
+  m_LocalPosition: {x: 2.3124242, y: -0.83, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -56531,7 +56531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabWeapon: {fileID: 7524374678816728763, guid: 717750c4b650bee42ac5c4d4976d0f4a, type: 3}
-  interval: 4.5
+  interval: 0.86
+  power: {x: 150, y: 450}
 --- !u!1 &989786942
 GameObject:
   m_ObjectHideFlags: 0
@@ -56679,7 +56680,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137654144}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2917554, y: -0.83, z: -10}
+  m_LocalPosition: {x: 2.3124242, y: -0.83, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
