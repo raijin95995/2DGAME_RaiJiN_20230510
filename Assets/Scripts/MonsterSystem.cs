@@ -12,7 +12,7 @@ public class MonsterSystem : MonoBehaviour
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, player.position, 0.05f);
+        transform.position = Vector3.MoveTowards(transform.position, player.position, 0.01f);
     }
 
 }

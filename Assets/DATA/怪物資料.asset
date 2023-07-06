@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd774725c8bbd2843b91501114c5451d, type: 3}
   m_Name: "\u602A\u7269\u8CC7\u6599"
   m_EditorClassIdentifier: 
-  hp: 0
-  atk: 0
+  hp: 50
+  atk: 10
   moveSpd: 0
   expFallPercent: 0
   prefabExp: {fileID: 0}
