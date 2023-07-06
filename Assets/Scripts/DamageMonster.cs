@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class DamageMonster : DamageBasic
 {
+	private DataMonster dataMonster;
 
-	
+	private void Start()
+	{
+		dataMonster = (DataMonster)data;
+	}
+
 
 
 	private void OnCollisionEnter2D(Collision2D collision)
@@ -20,5 +25,10 @@ public class DamageMonster : DamageBasic
 	{
 		base.Dead();
 		Destroy(gameObject);
+
+		if (Random.value < dataMonster.expFallPercent)
+		{
+			Instantiate(dataMonster.prefabExp, transform.position, transform.rotation);
+		}
 	}
 }

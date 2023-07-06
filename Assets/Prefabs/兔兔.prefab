@@ -158,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dff9d8e1a4737874fb8fa2ecb7e8df2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 72264b3b580355543986c5f5d2ce6e41, type: 2}
 --- !u!114 &1468319029
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,5 +171,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce180a5466dc8094a9ad6c2b54ecd717, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 72264b3b580355543986c5f5d2ce6e41, type: 2}
   prefabDamage: {fileID: 8479144555994420713, guid: c85f4eaec29875249ba2ece7f56bf017, type: 3}
+  data: {fileID: 11400000, guid: 72264b3b580355543986c5f5d2ce6e41, type: 2}

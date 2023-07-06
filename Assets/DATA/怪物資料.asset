@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 50
   atk: 10
-  moveSpd: 0
-  expFallPercent: 0
-  prefabExp: {fileID: 0}
+  moveSpd: 5
+  expFallPercent: 0.3
+  prefabExp: {fileID: 1907138296329715432, guid: 01c7fafad6cc01642a3d4107c3996de5, type: 3}
